@@ -93,11 +93,15 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #935d8c;
+		background: #0f0c29;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+		/*background-color: #935d8c;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);*/
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3227,7 +3231,7 @@ input, select, textarea {
 		}
 
 		#nav a:hover {
-			color: #636363;
+			color: #24243e;
 		}
 
 		#nav strong, #nav b {
@@ -3288,6 +3292,7 @@ input, select, textarea {
 
 					#nav ul li a:hover {
 						background-color: rgba(222, 222, 222, 0.25);
+						color: #24243e;
 					}
 
 					#nav ul li a.active {
